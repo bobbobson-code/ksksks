@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <a href="index.html">Voltar</a>
+    <section>
+        <h2>Boas Vindas, piloto</h2>
+        <p>Crie sua conta agora</p>
+        <form id="cadastroForm">
+            <label for="nomeCadastro">Nome</label>
+            <input type="text" name="nomeCadastro" id="nomeCadastro" placeholder="Digite seu nome" maxlength="80">
+
+            <label for="telefoneCadastro"></label>
+            <input type="tel" name="telefoneCadastro" id="telefoneCadastro" placeholder="Digite seu telefone" maxlength="15">
+
+            <label for="emailCadastro">Email</label>
+            <input type="email" name="emailCadastro" id="emailCadastro" placeholder="Digite seu email">
+
+            <label for="senhaCadastro">Senha</label>
+            <input type="password" name="senhaCadastro" id="senhaCadastro" placeholder="Digite sua senha">
+
+            <label for="confirmarSenhaCadastro">Confirmar Senha</label>
+            <input type="password" name="confirmarSenhaCadastro" id="confirmarSenhaCadastro" placeholder="Confirme sua senha">
+
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p class="cadastro-via-login">Já tem conta? <a href="login.html">Faça login</p>
+    </section>    
+    </main>
+    <footer>
+        <strong>Turbo JUKart</strong>
+        <p>Todos os direitos reservados</p>
+    </footer>
+    <script src="js/cadastro.js"></script>
+    <script src="js/api.js"></script>
+</body>
+</html>

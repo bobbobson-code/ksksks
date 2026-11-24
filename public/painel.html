@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Turbo<span> JuKart </span></h2>
+        <a href="index.html" id="btnSair">Sair</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>AREA DO PILOTO</h2>
+            <h3>Olá, <span id=userName>Nome</span></h3>
+            <p>Faça sua reserva</p>
+        </section>
+
+        <section id="reservaPiloto">
+            <h2>Nova Reserva</h2>
+            <form id="reservaPista">
+                <label for="data">Data</label>
+                <input type="date" name="data" id="data">
+
+                <label for="hora">Horas:</label>
+                <input type="number" name="hora" id="hora" required max="5">
+
+                <label for="pacote"></label>
+                <select  name="pacote" id="pacote">
+                    <option selected disabled>Selecione a pista</option>
+                    <option value="1">Pacote Comum</option>
+                    <option value="2">Pacote Premium</option>
+                </select>
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+
+        <section id="verReservas">
+            <h2>Minhas Reservas</h2>
+            <div id="listaReserva"></div>
+            <p id="guia">Carregando...</p>
+        </section>
+    </main>
+    <footer>
+        <strong>Turbo JUKart</strong>
+        <p>Todos os direitos reservados</p>
+    </footer>
+    <script src="js/api.js"></script>
+    <script src="js/painel.js"></script>
+</body>
+</html>
